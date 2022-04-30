@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "/sounds/:id" => "sounds#show"
   patch "/sounds/:id" => "sounds#update"
   delete "/sounds/:id" => "sounds#destroy"
+
+  get "/youtube/search" => "youtube#search"
 end
