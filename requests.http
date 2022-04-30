@@ -1,0 +1,55 @@
+### Sounds Index
+GET http://localhost:3000/sounds.json
+
+### Sounds Create
+POST http://localhost:3000/sounds.json
+Content-Type: application/json
+
+{
+"name": "Test name",
+"overall_rating": 100
+}
+
+### Sounds Show
+GET http://localhost:3000/sounds/1.json
+
+### Sounds Update
+PATCH http://localhost:3000/sounds/1.json
+Content-Type: application/json
+
+{
+"name": "New name",
+"overall_rating": 100
+}
+
+### Sounds Destroy
+DELETE http://localhost:3000/sounds/1.json
+
+### Users Index
+GET http://localhost:3000/sounds.json
+
+### Users Create
+POST http://localhost:3000/sounds.json
+Content-Type: application/json
+
+{
+"name": "Test name",
+"email": "test@test.com",
+"image_url": ""
+}
+
+### Users Show
+GET http://localhost:3000/sounds/1.json
+
+### Users Update
+PATCH http://localhost:3000/sounds/1.json
+Content-Type: application/json
+
+{
+"name": "New name",
+"email": "update@test.com",
+"image_url": ""
+}
+
+### Users Destroy
+DELETE http://localhost:3000/photos/1.json
