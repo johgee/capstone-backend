@@ -1,8 +1,8 @@
 ### Sounds Index
-GET http://localhost:3000/sounds.json
+GET http://localhost:3000/sounds
 
 ### Sounds Create
-POST http://localhost:3000/sounds.json
+POST http://localhost:3000/sounds
 Content-Type: application/json
 
 {
@@ -11,10 +11,10 @@ Content-Type: application/json
 }
 
 ### Sounds Show
-GET http://localhost:3000/sounds/1.json
+GET http://localhost:3000/sounds/1
 
 ### Sounds Update
-PATCH http://localhost:3000/sounds/1.json
+PATCH http://localhost:3000/sounds/1
 Content-Type: application/json
 
 {
@@ -23,42 +23,45 @@ Content-Type: application/json
 }
 
 ### Sounds Destroy
-DELETE http://localhost:3000/users/1.json
+DELETE http://localhost:3000/users/1
 
 ### Users Index
-GET http://localhost:3000/users.json
+GET http://localhost:3000/users
 
-### Users Create
-POST http://localhost:3000/users.json
+### Users Create (signup)
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-"name": "Test name",
-"email": "test@test.com",
-"image_url": ""
+"name": "grace",
+"email": "grace@test.com",
+"password": "password",
+"password_confirmation": "password"
 }
 
+### sessions create (login)
+POST http://localhost:3000/sessions.json 
+
 ### Users Show
-GET http://localhost:3000/users/1.json
+GET http://localhost:3000/users/1
 
 ### Users Update
-PATCH http://localhost:3000/users/1.json
+PATCH http://localhost:3000/users/1
 Content-Type: application/json
 
 {
 "name": "New name",
-"email": "update@test.com",
-"image_url": ""
+"email": "update@test.com"
 }
 
 ### Users Destroy
-DELETE http://localhost:3000/users/1.json
+DELETE http://localhost:3000/users/1
 
 ### playlists index
-GET http:localhost:3000/playlists.json
+GET http:localhost:3000/playlists
 
 ### playlists create
-POST http:localhost:3000/playlists.json
+POST http:localhost:3000/playlists
 Content-Type: application/json
 
 {

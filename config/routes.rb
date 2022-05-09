@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   post "/playlists" => "playlists#create"
 
   get "/youtube/search" => "youtube#search"
+
+  #users
+  post "/users" => "users#create"
+
+  #session
+  post "/sessions" => "sessions#create"
 end
