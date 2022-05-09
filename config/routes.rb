@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   delete "/sounds/:id" => "sounds#destroy"
 
   get "/playlists" => "playlists#index"
+  post "/playlists" => "playlists#create"
 
   get "/youtube/search" => "youtube#search"
 end

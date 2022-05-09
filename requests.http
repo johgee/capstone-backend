@@ -54,5 +54,16 @@ Content-Type: application/json
 ### Users Destroy
 DELETE http://localhost:3000/users/1.json
 
+### playlists index
+GET http:localhost:3000/playlists.json
+
+### playlists create
+POST http:localhost:3000/playlists.json
+Content-Type: application/json
+
+{
+  "name" "Playlist 1"
+}
+
 ### Youtube Search Request 
 GET http://localhost:3000/youtube/search?search=rain
