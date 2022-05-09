@@ -22,8 +22,7 @@ class UsersController < ApplicationController
   def update
     user = User.find_by(id: params[:id])
     user.name = params[:name] || user.name
-    user.width = params[:width] || user.width
-    user.height = params[:height] || user.height
+    user.email = params[:email] || user.email
     user.save
     render json: user.as_json
   end

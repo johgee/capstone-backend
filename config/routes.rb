@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   patch "/sounds/:id" => "sounds#update"
   delete "/sounds/:id" => "sounds#destroy"
 
+  get "/playlists" => "playlists#index"
+
   get "/youtube/search" => "youtube#search"
 end
