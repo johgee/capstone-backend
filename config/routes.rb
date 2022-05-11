@@ -11,10 +11,12 @@ Rails.application.routes.draw do
   patch "/sounds/:id" => "sounds#update"
   delete "/sounds/:id" => "sounds#destroy"
 
+  #playlists
   get "/playlists" => "playlists#index"
   post "/playlists" => "playlists#create"
 
   get "/youtube/search" => "youtube#search"
+  delete "/playlists/:id" => "playlists#destroy"
 
   #users
   post "/users" => "users#create"

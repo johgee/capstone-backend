@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTIyODczMjB9.zi98FDBfwDgvI95QZQ5tih-KwU9jCFxyTXuxAnd1h6Q
+
 ### Sounds Index
 GET http://localhost:3000/sounds
 
@@ -10,7 +12,7 @@ Content-Type: application/json
 "overall_rating": 100
 }
 
-### Sounds Show
+### Sounds Show 
 GET http://localhost:3000/sounds/1
 
 ### Sounds Update
@@ -33,14 +35,20 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-"name": "grace",
-"email": "grace@test.com",
+"name": "gracee",
+"email": "gracee@test.com",
 "password": "password",
 "password_confirmation": "password"
 }
 
 ### sessions create (login)
-POST http://localhost:3000/sessions.json 
+POST http://localhost:3000/sessions
+Content-Type: application/json 
+
+{
+  "email": "gracee@test.com",
+  "password": "password"
+}
 
 ### Users Show
 GET http://localhost:3000/users/1
@@ -58,15 +66,22 @@ Content-Type: application/json
 DELETE http://localhost:3000/users/1
 
 ### playlists index
-GET http:localhost:3000/playlists
+GET http://localhost:3000/playlists
 
 ### playlists create
-POST http:localhost:3000/playlists
+POST http://localhost:3000/playlists
 Content-Type: application/json
 
 {
-  "name" "Playlist 1"
+  "user_id": 2,
+  "name": "Playlist 1",
+  "user_rating": 5,
+  "youtube_code": "IO5u1m0TsJw"
 }
+
+### playlist delete
+DELETE http://localhost:3000/playlists/1
+
 
 ### Youtube Search Request 
 GET http://localhost:3000/youtube/search?search=rain

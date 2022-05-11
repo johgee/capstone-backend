@@ -7,9 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 #users
-User.create!({ name: "Grace Joh", email: "grace@test.com", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaz2Zx150IC0CzMLDSgxpmaeC2HbFjX5Ics1dmZqADVCag0RMTjupgwzG3hT5PUimBiI&usqp=CAU" })
-User.create!({ name: "Eunice Joh", email: "eunice@test.com", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMVLDKKJvhC63CW_BsgHdTDMJxI5TIxn76A&usqp=CAU" })
-User.create!({ name: "Maddy Lee", email: "maddy@test.com", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1Pfv3nWEBKeUzg4DPmDLHzTLhUJ9Ty3iSw&usqp=CAU" })
+User.create!({ name: "Grace Joh", email: "grace@test.com", password: "password" })
+User.create!({ name: "Eunice Joh", email: "eunice@test.com", password: "password" })
+User.create!({ name: "Maddy Lee", email: "maddy@test.com", password: "password" })
 
 #sounds
 Sound.create!({ name: "O.W.L.Exam Period of Hogwarts The Great Hall 3D Ambient Sounds", overall_rating: 5, youtube_code: "yBmPDPCd_ls" })
