@@ -1,24 +1,28 @@
-# README
+# Sleep ASMR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sleep ASMR is an app built to allow users to search Youtube and a curated list of sounds to add to a playlist.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+### Dependencies
 
-* System dependencies
+Rails 7.0.2.3
 
-* Configuration
+### Installation
 
-* Database creation
+Clone the repo:
 
-* Database initialization
+```
+git clone https://github.com/johgee/capstone-backend.git
+```
 
-* How to run the test suite
+### Executing program
 
-* Services (job queues, cache servers, search engines, etc.)
+- You can search for a sound (video) from Youtube or choose a sound from 'Our sounds'.
+- Enjoy calm & soothing sounds while you sleep!
 
-* Deployment instructions
+Run locally:
 
-* ...
+```
+rails server
+```
