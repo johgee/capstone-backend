@@ -6,7 +6,4 @@ class YoutubeController < ApplicationController
     search_results = JSON.parse(response)
     render json: search_results.as_json
   end
-
-  def show
-  end
 end

@@ -21,7 +21,7 @@ Content-Type: application/json
 
 {
 "name": "New name",
-"overall_rating": 100
+"overall_rating": 100,
 }
 
 ### Sounds Destroy
@@ -39,6 +39,14 @@ Content-Type: application/json
 "email": "gracee@test.com",
 "password": "password",
 "password_confirmation": "password"
+}
+
+### Users update
+PATCH http://localhost:3000/localhost:3000/users
+Content-Type: application/json 
+
+{
+  "image_url": "test"
 }
 
 ### sessions create (login)
